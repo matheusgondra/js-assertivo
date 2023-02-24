@@ -1,0 +1,32 @@
+{
+  "name": "@jsassertivo/cli",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "meutest": "cli.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "user:generate": "node commands/generate-user.js",
+    "db:create": "node commands/create-database.js"
+  },
+  "keywords": [],
+  "author": "Gabriel Ramos <gabriel.luiz.ramos@gmail.com> (https://gabrieluizramos.com.br)",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "babel-jest": "^26.3.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "faker": "^5.5.3",
+    "jest": "^26.4.2",
+    "prettier": "^2.8.4"
+  }
+}
