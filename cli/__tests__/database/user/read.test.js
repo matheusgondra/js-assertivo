@@ -17,11 +17,13 @@ const mockUsuario = {
 loadDatabase.mockResolvedValue([mockUsuario]);
 
 it("Encontra usuário quando encontra seu UID", async () => {
+	expect.assertions(1);
 	const usuario = await getUserByUid("abc-1234");
 	expect(usuario).toEqual(mockUsuario);
 });
 
 it("Dispara um erro caso o usuário não seja encontrado", async () => {
+	expect.assertions(1);
 	try {
 		await getUserByUid("uid-nao-existente");
 	} catch (err) {
