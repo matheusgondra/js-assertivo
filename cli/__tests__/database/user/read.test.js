@@ -1,8 +1,8 @@
-import { getUserByUid } from "../../../src/database/user/read";
-import { loadDatabase } from "../../../src/database/file";
+import { getUserByUid } from "database/user/read";
+import { loadDatabase } from "database/file";
 
-jest.mock("../../../src/database/path");
-jest.mock("../../../src/database/file");
+jest.mock("database/path");
+jest.mock("database/file");
 
 const mockUsuario = {
 	uid: "abc-1234",

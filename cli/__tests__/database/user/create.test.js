@@ -1,9 +1,9 @@
-import { createUser } from "../../../src/database/user/create";
-import * as file from "../../../src/database/file";
-import ROLES from "../../../src/constants/roles";
+import { createUser } from "database/user/create";
+import * as file from "database/file";
+import ROLES from "constants/roles";
 
-jest.mock("../../../src/database/file");
-jest.mock("../../../src/database/path");
+jest.mock("database/file");
+jest.mock("database/path");
 
 const usuario = {
 	email: "qualquer@email.com",
